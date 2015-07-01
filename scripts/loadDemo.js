@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     $("button").click(function(){
-        $("#div1").load("../../data/jsonData");
+        $("#div1").load("../../data/finishers.xml");
     });
 
 

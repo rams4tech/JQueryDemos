@@ -44,7 +44,7 @@ $(document).ready(function () {
                 console.log("success"+response);
                 //console.log(response.length);
                 $("#result-temp").html("<strong> " + response + " Successfully from the server </strong> ");
-                $(location).attr('href','listEmployee.html')
+                $(location).attr('href','listEmployee.html');
             },
             error: function (response) {
                 console.log("failure" + response);

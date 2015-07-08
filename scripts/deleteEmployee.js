@@ -10,7 +10,7 @@ $(document).ready(function(){
             url: rootURL + '/' + empId,
             success: function(response){
                 $( "#result-temp" ).html( "<strong> Succesfully deleted the Employee Data from the server </strong>" );
-                $(location).attr('href','listEmployee.html');
+                //$(location).attr('href','listEmployee.html');
             },
             error: function(response){
                 console.log(JSON.stringify(response));

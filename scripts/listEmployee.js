@@ -45,6 +45,7 @@ $(document).ready(function(){
                     + response[i].phoneNum + '</td>' + deleteHtml +'</tr>';
                 }
                 //$('#empListTable tr').first().after(html);
+                console.log(html);
                 $('#empListDiv').html(html);
 
                 $( "#result-temp" ).html( "<strong> Successfully got the Employees List from the server</strong>" );

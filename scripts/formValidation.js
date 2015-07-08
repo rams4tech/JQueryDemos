@@ -1,6 +1,7 @@
 $(document).ready(function () {
     <!--Name can't be blank-->
     $('#contact_name').on('input', function () {
+        console.log("User started entering the data");
         var input = $(this);
         var is_name = input.val();
         if (is_name) {
@@ -42,6 +43,7 @@ $(document).ready(function () {
 
     <!--Message can't be blank -->
     $('#contact_message').keyup(function (event) {
+        console.log("Key Up event on the message");
         var input = $(this);
         var message = $(this).val();
         console.log(message);

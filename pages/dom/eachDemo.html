@@ -8,6 +8,7 @@
 
             $("button").click(function(){
                 $("li").each(function(){
+                    console.log($(this));
                     alert($(this).text());
                 });
             });
@@ -22,6 +23,7 @@
     <li>Coffee</li>
     <li>Milk</li>
     <li>Soda</li>
+    <li>Tea</li>
 </ul>
 
 </body>

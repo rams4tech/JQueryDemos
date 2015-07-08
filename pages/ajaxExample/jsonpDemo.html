@@ -30,10 +30,12 @@
                     // Work with the response
                     success: function (response) {
                         console.log(response); // server response
-                        $('#results').html(response.query);
+                        console.log(response.query.results.channel.item.title);
+                        $('#result')[0].innerhtml =response.query.results.channel.item.title;
                     },
                     failure : function (response) {
                         console.log(response); // server response
+                        $('#result')[0].innerhtml = response;
                     }
                 });
             });
@@ -47,7 +49,7 @@
     <input type="button" id="show" value="show"/>
 
 </form>
-<div id="results">
+<div id="result">
 
 </div>
 </body>

@@ -3,6 +3,8 @@ $(document).ready(function(){
     var v = false;
     var $f, $m;
 
+
+
     $("button#vegOn").click(function(){
         if (v == false){
 
@@ -36,4 +38,6 @@ $(document).ready(function(){
             v = false;
         }//end if
     });//end restoreMe button
+
+    //$("button#vegOn").trigger('click');
 });//end doc ready
